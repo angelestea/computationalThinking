@@ -5,7 +5,7 @@ def binarySearch():
     highest = max(1.0, objective)#Only return the value higher inte the function
     answer = (highest + down) / 2
     while abs(answer**2 - objective) >= epsilon:
-        print(f'down = {down}, highest = {highest}, answer = {answer}')
+        #print(f'down = {down}, highest = {highest}, answer = {answer}')
         if answer**2 < objective:
             down = answer
         else:
@@ -15,7 +15,7 @@ def binarySearch():
 
 def aproximation():
     objective = int(input('Catch a number:  '))
-    epsilon = 0.0001
+    epsilon = 0.01
     pss = epsilon**2
     answer = 0.0
     #'abs' return the absolute value
